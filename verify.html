@@ -54,11 +54,6 @@
     }
     let fileName = GetURLParameter('i');
     document.getElementById("reportFrame").setAttribute("src",`${fileName}.pdf#toolbar=0&navpanes=0`);
-    var iframe = document.getElementById('reportFrame');
-    iframe.onload = function () {
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 50 + 'px';
-        iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 20 + 'px';
-    }
 </script>
 
 </body></html>
